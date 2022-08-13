@@ -1,0 +1,19 @@
+.layout {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d5f2ed;
+
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}

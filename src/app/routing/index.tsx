@@ -1,18 +1,24 @@
-import { Routes, Route } from 'react-router-dom'
-import privateRoutes from './private-routes'
-import publicRoutes from './public-routes'
+import LoginPage from '@pages/login'
+import NoMatchPage from '@pages/no-math'
+import RoomPage from '@pages/room'
+import RoomsPage from '@pages/rooms'
+import { Route, Routes } from 'react-router-dom'
+import PrivateRoute from './private-route'
+import PublicRoute from './public-route'
 
 const Routing = () => {
-    // effector state
-    const loggined = true
-
-    const routes = loggined ? privateRoutes : publicRoutes
-
     return (
         <Routes>
-            {routes.map((route) => (
-                <Route key={route.path} {...route} />
-            ))}
+            <Route element={<PrivateRoute />}>
+                <Route path={'/rooms'}>
+                    <Route index element={<RoomsPage />} />
+                    <Route path={':id'} element={<RoomPage />} />
+                </Route>
+            </Route>
+            <Route element={<PublicRoute />}>
+                <Route path="/login" element={<LoginPage />} />
+            </Route>
+            <Route path="*" element={<NoMatchPage />} />
         </Routes>
     )
 }

@@ -5,6 +5,7 @@
             "@features/*": ["features/*"],
             "@config/*": ["./shared/config/*"],
             "@utils/*": ["./shared/lib/*"],
+            "@shared/*": ["./shared/*"],
             "@pages/*": ["./pages/*"],
             "@pages": ["./pages"],
             "@ui": ["./shared/ui"],
