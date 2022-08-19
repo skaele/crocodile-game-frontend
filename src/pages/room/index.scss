@@ -1,0 +1,18 @@
+.room {
+    height: 100%;
+
+    display: grid;
+    grid-template-areas: 'chat draw-panel';
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 1fr;
+
+    gap: 6px;
+}
+
+.chat {
+    grid-area: chat;
+}
+
+.draw-panel {
+    grid-area: 'draw-panel';
+}

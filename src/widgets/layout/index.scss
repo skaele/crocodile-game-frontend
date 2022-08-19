@@ -6,8 +6,11 @@
     display: grid;
     grid-template-areas:
         'header'
-        'main'
-        'footer';
+        'main';
+
+    gap: 6px;
+
+    grid-template-rows: 60px 1fr;
 }
 
 header {
