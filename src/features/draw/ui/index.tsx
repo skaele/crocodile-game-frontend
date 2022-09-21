@@ -20,12 +20,12 @@ const DrawPanel = () => {
     useEffect(() => {
         const context = canvasRef?.current?.getContext('2d')
         if (lastPaint && context) {
-            drawLine(context, lastPaint)
+            drawLine(context, [lastPaint])
         }
     }, [lastPaint])
 
     return (
-        <div className="draw-panel grid place-items-center rounded-lg bg-white">
+        <div className="grid place-items-center rounded-lg bg-white">
             <canvas className="border" width={1400} height={800} ref={canvasRef} />
         </div>
     )

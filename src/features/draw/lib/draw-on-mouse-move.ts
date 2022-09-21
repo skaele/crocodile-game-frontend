@@ -5,7 +5,7 @@ const drawOnMouseMove = (context: CanvasRenderingContext2D) => (event: MouseEven
     const { offsetX, offsetY, movementX, movementY } = event
 
     if (!!event.buttons) {
-        drawLine(context, event)
+        drawLine(context, [event])
 
         onDraw({ offsetX, offsetY, movementX, movementY })
     }
