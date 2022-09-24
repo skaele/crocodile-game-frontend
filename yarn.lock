@@ -252,6 +252,11 @@
   resolved "https://registry.yarnpkg.com/@cush/relative/-/relative-1.0.0.tgz#8cd1769bf9bde3bb27dac356b1bc94af40f6cc16"
   integrity sha512-RpfLEtTlyIxeNPGKcokS+p3BZII/Q3bYxryFRglh5H3A3T8q9fsLYm72VYAMEOOIBLEa8o93kFLiBDUWKrwXZA==
 
+"@effector/reflect@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@effector/reflect/-/reflect-8.0.0.tgz#ff248a18f49be8439dd316d316a550aacd34dc12"
+  integrity sha512-roMf2JjIY22OywkO26FRIw9pf/knPvFo0r1f30XbCjWn3fGQik8/vh8Nyz2eUb02yRnSuVi+1nXM1YbDiuGNgQ==
+
 "@esbuild/linux-loong64@0.14.54":
   version "0.14.54"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.14.54.tgz#de2a4be678bd4d0d1ffbb86e6de779cde5999028"

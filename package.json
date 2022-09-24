@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@effector/reflect": "^8.0.0",
     "autoprefixer": "^10.4.8",
     "effector": "^22.3.0",
     "effector-react": "^22.1.6",

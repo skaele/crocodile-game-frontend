@@ -1,4 +1,4 @@
-import { onDraw } from '@entities/paint/model'
+import { onDraw } from '@entities/draw/model/draw'
 import drawLine from './draw-line'
 
 const drawOnMouseMove = (context: CanvasRenderingContext2D) => (event: MouseEvent) => {

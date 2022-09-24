@@ -1,6 +1,6 @@
-import { PaintCoords } from '@entities/paint/types'
+import { DrawCoords } from '@entities/draw/types'
 
-const drawLine = (context: CanvasRenderingContext2D, coords: PaintCoords[]) => {
+const drawLine = (context: CanvasRenderingContext2D, coords: DrawCoords[]) => {
     context.beginPath()
 
     coords.forEach(({ offsetX, offsetY, movementX, movementY }) => {
